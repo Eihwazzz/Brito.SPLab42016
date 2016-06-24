@@ -1,0 +1,147 @@
+/*body {
+    
+    background: blue url(img/BackGroundFour.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+body{
+	    background: #101012 url('img/BackGroundFour.jpg') no-repeat top center;
+   	/*background-image: url("img/BackGroundFour.jpg");*/
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(16, 16, 18);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.bgimg img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.navTabs {
+	color:#334323;
+	font-weight: bold;
+	vertical-align:middle;
+	border-style: groove;
+    border-bottom: 1px solid #151313 !important;
+        background-color: rgba(0, 0, 0, 0.33);
+}
+ul li a{
+	color:inherit;
+}
+.signedas{
+	color:	#000000;
+	border-style: groove;
+}
+.supSpan{
+	display:block;
+	height: 35px;
+	color:#000000;
+	vertical-align:middle;
+}
+.form-signin-heading{
+	/*border: 1px double;
+	border-color: #000000;*/
+	
+}
+div.logOut{
+	height: 40px;
+}
+div.logOut button.btn-calm{
+	height: 80%;
+	text-align: center;
+}
+canvas{
+	max-width: 75%;
+	max-height: 75%;
+}
+div.tb1 div{
+	border-style: double;
+}
+div#tablaTurnos div.row div{
+	background-color: WHITE;
+}
+.registroTurnos, .gestionDeUsuarios{
+	max-height: 90%;
+	max-width: 100%;
+}
+.btnRegistroTurnos,.btnGestionDeUsuarios{
+	width: 100%;
+	max-width: 100%;
+	max-height: 10%;
+}
+.fotoGrilla{
+	width: 80%;
+	height: 80%;
+	max-height: 100%;
+	max-width: 100%;
+}
+.grillaUsuarios{
+	background-color: #	D8D8D8;
+}
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+}
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	margin-top: 0.5em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+div.radioDiv {
+	clear: both;
+	margin: 0 1px;
+}

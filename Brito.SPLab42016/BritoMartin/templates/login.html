@@ -1,0 +1,39 @@
+<div class="container">
+	<form class="form-signin">
+        <h2 class="">Iniciar Sesi&oacute;n</h2>
+        
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" ng-model="usuario.mail" class="form-control" placeholder="Email" required autofocus>
+        
+        <label for="inputNombre" class="sr-only">Nombre</label>
+        <input type="text" ng-model="usuario.nombre" class="form-control" placeholder="Nombre" required autofocus>
+        
+        <label for="inputPassword" class="sr-only">Contrase&ntilde;a</label>
+        <input type="password" ng-model="usuario.password" class="form-control" placeholder="Contrase&ntilde;a" required>
+          
+        <div class="radioDiv">
+          
+            <input id="radio1" class="radio" type="radio" ng-model="administrador" name="radioBtn" value="Administrador" ng-click="rellenar(administrador)">
+            <label for="radio1" class="form-signin-heading"> Administrador
+          </label>
+       </div>
+        <div class="radioDiv">
+          
+            <input id="radio2" class="radio" type="radio" ng-model="comprador" name="radioBtn" value="Comprador" ng-click="rellenar(comprador)">
+            <label for="radio2" class="form-signin-heading"> Comprador
+          </label>
+        </div>
+        <div class="radioDiv">
+         
+            <input id="radio3" class="radio" type="radio" ng-model="vendedor" name="radioBtn" value="Vendedor" ng-click="rellenar(vendedor)"> 
+            <label for="radio3" class="form-signin-heading">
+            Vendedor
+          </label>
+        </div>
+     
+        
+        <button class="btn btn-lg btn-primary btn-block" ng-click="logear()">Ingresar</button>
+        <button class="btn btn-lg btn-primary btn-block" ng-click="limpiarPerfiles()">Limpiar Perfiles</button>
+        
+      </form>
+</div>
